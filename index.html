@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — App Captura</title>
+<meta name="description" content="Política de privacidade da extensão App Captura para Chrome: o que ela registra, onde os dados ficam e como apagá-los.">
+<style>
+:root{--bg:#ffffff;--fg:#1c2233;--muted:#5b6479;--line:#d9deea;--accent:#4f46e5;--code:#eef0f8;--th:#f3f4fa}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1020;--fg:#e8ecfb;--muted:#a0aac2;--line:#293451;--accent:#9a94ff;--code:#171f38;--th:#121a30}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 'Segoe UI',system-ui,-apple-system,sans-serif}
+main{max-width:760px;margin:0 auto;padding:40px 20px 72px}
+h1{font-size:30px;line-height:1.25;margin:0 0 18px}
+h2{font-size:21px;margin:38px 0 10px;padding-top:6px}
+h3{font-size:17px;margin:26px 0 8px}
+p,li{overflow-wrap:anywhere}
+a{color:var(--accent)}
+code{background:var(--code);padding:1px 6px;border-radius:5px;font-size:.9em}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:15px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--th)}
+footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+@media (max-width:560px){h1{font-size:25px}main{padding:28px 16px 56px}table{font-size:14px}}
+</style>
+</head>
+<body>
+<main>
+<h1>Política de Privacidade — App Captura</h1>
+<p><strong>Vigência:</strong> 08/10/2026
+<strong>Responsável:</strong> Gustavo Guaitolini
+<strong>Contato para dúvidas de privacidade:</strong> contatoappcaptura@gmail.com</p>
+<h2>Resumo</h2>
+<p>O App Captura é uma extensão do Chrome que grava, por ação sua, os passos de um processo em uma página web e gera um guia ilustrado em PDF ou PowerPoint. <strong>Tudo é guardado no seu próprio navegador. A extensão não envia nenhum dado para servidores nossos nem de terceiros, não usa análise de uso (analytics), não exibe anúncios e não vende informações.</strong></p>
+<h2>O que a extensão registra</h2>
+<p>A gravação só começa quando você clica em <strong>Iniciar captura</strong> e termina quando você conclui ou cancela. Enquanto grava, a cada clique ou interação por teclado a extensão guarda:</p>
+<ul>
+<li><strong>Uma imagem (screenshot) da parte visível da aba.</strong> Antes de capturar, a extensão oculta visualmente o conteúdo de campos de formulário (caixas de texto, áreas de texto, listas de seleção, campos editáveis e elementos marcados com <code>data-private</code> ou <code>data-sensitive</code>).</li>
+<li><strong>O endereço da página</strong>, sem credenciais, sem parâmetros de consulta (tudo depois do <code>?</code>) e sem fragmento (depois do <code>#</code>).</li>
+<li><strong>O nome do elemento clicado</strong> (até 60 caracteres, tirado do texto, do rótulo de acessibilidade ou do título do elemento) e um identificador técnico do elemento na página, usado para descrever o passo.</li>
+<li><strong>Data e hora</strong> de cada passo e a posição do clique na imagem.</li>
+<li><strong>O que você escreve ou ajusta no editor:</strong> instruções, título e capa do guia, enquadramento da imagem, traços desenhados e áreas tarjadas.</li>
+</ul>
+<h2>O que a extensão não registra</h2>
+<ul>
+<li><strong>Não lê nem guarda o que você digita</strong> em campos de formulário, inclusive senhas, códigos de verificação e dados de cartão.</li>
+<li>Não lê cookies, senhas salvas, histórico de navegação nem o conteúdo de abas fora de uma gravação iniciada por você.</li>
+<li>Não captura páginas internas do Chrome (como <code>chrome://</code>) nem páginas que não sejam <code>http</code> ou <code>https</code>.</li>
+</ul>
+<h2>Limitação que você precisa conhecer</h2>
+<p>A ocultação automática vale para campos de formulário. <strong>Qualquer outra informação visível na tela, como nomes, documentos, valores e e-mails exibidos em tabelas ou textos da página, aparece no screenshot.</strong> Evite gravar telas com dados que você não queira incluir no guia e use a ferramenta de tarja do editor para cobrir informações sensíveis antes de exportar.</p>
+<p>A tarja é gravada nos pixels da imagem do PDF ou do PowerPoint exportado, e não pode ser removida do arquivo depois. <strong>A captura original, sem tarja, continua guardada no seu navegador até você excluir o guia.</strong> Quem tiver acesso ao seu perfil do Chrome pode vê-la.</p>
+<h2>Onde os dados ficam</h2>
+<p>Os guias e os screenshots ficam no armazenamento local do navegador (IndexedDB da extensão), e o estado da gravação em andamento fica em <code>chrome.storage.local</code>. Os dados permanecem no perfil do Chrome em que a extensão está instalada. Não há contas, login, servidor ou sincronização.</p>
+<h2>Exportação e compartilhamento</h2>
+<p>Os arquivos PDF e PowerPoint são gerados no seu computador e salvos por você, na janela de download do Chrome. <strong>O arquivo exportado contém o que aparecia nos screenshots.</strong> Ao enviá-lo a outras pessoas, a responsabilidade pelo conteúdo compartilhado é sua. A extensão não envia esses arquivos para lugar nenhum.</p>
+<h3>Backup dos guias</h3>
+<p>Você pode salvar um guia em um arquivo de backup (<code>.appcaptura.json</code>) e importá-lo depois, neste ou em outro computador. O arquivo é gerado no seu computador e salvo por você, na janela de download do Chrome. Ele contém o texto do guia e as imagens capturadas. <strong>No modo "para continuar editando", as imagens vão sem as tarjas gravadas.</strong> No modo "para compartilhar", as tarjas são gravadas nas imagens e as capturas originais não entram no arquivo. Ao importar, o arquivo é lido apenas no seu computador. A extensão não envia backups para lugar nenhum, e quem receber o arquivo de você passa a ter o que ele contém.</p>
+<h2>Por quanto tempo guardamos e como apagar</h2>
+<p>Os dados ficam até você apagá-los. Para isso:</p>
+<ul>
+<li>Exclua um guia na lista de guias salvos do editor (botão <strong>Excluir</strong>).</li>
+<li>Ou remova a extensão ou limpe os dados do navegador, o que apaga todos os guias e screenshots locais. Não há cópia em nenhum outro lugar, então essa ação não pode ser desfeita.</li>
+</ul>
+<h2>Permissões que a extensão pede e por quê</h2>
+<table>
+<thead>
+<tr>
+<th>Permissão</th>
+<th>Para que serve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Acesso a todos os sites</td>
+<td>Capturar a tela e registrar cliques nas páginas que você escolher documentar, inclusive quando o processo muda de site. A captura só fica ativa durante uma gravação iniciada por você.</td>
+</tr>
+<tr>
+<td><code>scripting</code></td>
+<td>Instalar o script de captura nas páginas (e em seus quadros internos) durante a gravação.</td>
+</tr>
+<tr>
+<td><code>storage</code> e <code>unlimitedStorage</code></td>
+<td>Guardar o estado da gravação e os guias e screenshots localmente, que podem ocupar bastante espaço.</td>
+</tr>
+<tr>
+<td><code>downloads</code></td>
+<td>Salvar o PDF ou PowerPoint exportado.</td>
+</tr>
+<tr>
+<td><code>sidePanel</code></td>
+<td>Mostrar o painel de gravação ao lado da página.</td>
+</tr>
+</tbody>
+</table>
+<h2>Código e terceiros</h2>
+<p>A extensão não carrega nem executa código hospedado fora do pacote instalado e não faz requisições a serviços externos. As bibliotecas de geração de PDF e PowerPoint vêm empacotadas dentro da própria extensão.</p>
+<h2>Uso dos dados</h2>
+<p>Os dados descritos acima são usados apenas para a função única da extensão: montar e exportar guias passo a passo. Eles não são vendidos, não são transferidos a terceiros, não são usados para publicidade, nem para avaliar crédito ou emprego.</p>
+<h2>Crianças</h2>
+<p>A extensão não é direcionada a menores de 13 anos.</p>
+<h2>Alterações</h2>
+<p>Se esta política mudar, a nova versão será publicada neste mesmo endereço, com a data de vigência atualizada. Mudanças que alterem o tratamento de dados só entrarão em vigor junto de uma nova versão da extensão.</p>
+<h2>Contato</h2>
+<p>Dúvidas ou pedidos sobre privacidade: contatoappcaptura@gmail.com.</p>
+<footer>App Captura — extensão para Chrome.</footer>
+</main>
+</body>
+</html>
